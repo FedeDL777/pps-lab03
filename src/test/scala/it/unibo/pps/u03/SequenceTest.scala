@@ -10,6 +10,7 @@ class SequenceTest:
 
   val sequence: Sequence[Int] = Cons(10, Cons(20, Cons(30, Nil())))
 
+  
   @Test def testSum() =
     assertEquals(0, sum(Nil()))
     assertEquals(60, sum(sequence))
